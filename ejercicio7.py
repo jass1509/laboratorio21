@@ -6,22 +6,22 @@ def copiarBinario(origen, destino):
     with open(origen, "rb") as o, open(destino, "wb") as d:
         d.write(o.read())
 
-print("¿Qué desea hacer?")
-print("1. Copiar archivo de texto")
-print("2. Copiar archivo binario")
+print("¿que desea hacer?")
+print("1. copiar archivo de texto")
+print("2. copiar archivo binario")
 
-opcion = input("Ingrese la opción: ")
+opcion = input("ingrese una opcion: ")
 
 try:
-    archivoOrigen = input("Ingrese el nombre del archivo de origen: ")
-    archivoDestino = input("Ingrese el nombre del archivo de destino: ")
+    archivoOrigen = input("ingrese el nombre del archivo de origen: ")
+    archivoDestino = input("ingrese el nombre del archivo de destino: ")
 
     if opcion == "1":
         copiarArchivo(archivoOrigen, archivoDestino)
-        print("Archivo de texto copiado correctamente")
+        print("archivo de texto copiado correctamente")
     elif opcion == "2":
         copiarBinario(archivoOrigen, archivoDestino)
-        print("Archivo binario copiado correctamente")
+        print("archivo binario copiado correctamente")
     else:
         print("Opción inválida")
 
